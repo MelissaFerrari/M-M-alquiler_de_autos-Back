@@ -1,0 +1,19 @@
+package AgenciaAutos.AgenciaAutos.service;
+
+import AgenciaAutos.AgenciaAutos.entity.Auto;
+import AgenciaAutos.AgenciaAutos.repository.AutoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class AutoService {
+
+    @Autowired
+    AutoRepository autoRepository;
+
+    public List<Auto> getAutos() {
+        return autoRepository.findAll();
+    }
+}

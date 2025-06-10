@@ -1,0 +1,30 @@
+package AgenciaAutros.AgenciaAutos.controller;
+
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import AgenciaAutros.AgenciaAutos.service.AutoService;
+import AgenciaAutros.AgenciaAutos.entity.Auto;
+
+
+
+@RestController
+public class AutoController {
+	
+	 @Autowired
+	 private AutoService autoService;
+	
+	@GetMapping("/test")
+	public String Test() {
+		return "Probando";
+	}
+	
+	@GetMapping("/getautos")
+	public List<Auto> getAutos(){
+		return autoService.getAutos();
+	}
+
+}
