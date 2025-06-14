@@ -1,0 +1,67 @@
+package AgenciaAutros.AgenciaAutos.controller;
+
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import AgenciaAutros.AgenciaAutos.service.AutoService;
+import AgenciaAutros.AgenciaAutos.entity.Auto;
+
+
+
+@RestController
+public class AutoController {
+	
+	@Autowired
+	private AutoService autoService;
+	
+	@GetMapping("/test")
+	public String Test() {
+		return "Probando";
+	}
+	
+	@GetMapping("/getautos")
+	public List<Auto> getAutos(){
+		return autoService.getAutos();
+	}
+	
+	@GetMapping("/getauto")
+	public ResponseEntity<Auto> getAutoPorDominio(@RequestParam String dominio) {
+	    Auto auto = autoService.getAutoPorDominio(dominio);
+	    if (auto != null) {
+	        return ResponseEntity.ok(auto);
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
+
+
+	@PostMapping("/agregarauto")
+	public Auto agregarAuto(@RequestBody Auto auto) {
+	    return autoService.agregarAuto(auto);
+	}
+
+	@DeleteMapping("/eliminarauto")
+	public ResponseEntity<String> eliminarAuto(@RequestParam String dominio) {
+	    boolean eliminado = autoService.eliminarAuto(dominio);
+	    if (eliminado) {
+	        return ResponseEntity.ok("Auto eliminado correctamente.");
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
+
+	@PutMapping("/actualizarauto")
+	public ResponseEntity<Auto> actualizarAuto(@RequestBody Auto auto) {
+	    if (autoService.existeAuto(auto.getDominio())) {
+	        return ResponseEntity.ok(autoService.actualizarAuto(auto));
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
+
+	
+}

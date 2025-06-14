@@ -17,4 +17,34 @@ public class AutoService {
     public List<Auto> getAutos() {
         return autoRepository.findAll();
     }
+    
+    public Auto getAutoPorDominio(String dominio) {
+        return autoRepository.findById(dominio).orElse(null);
+    }
+
+    
+//POST   
+    public Auto agregarAuto(Auto auto) {
+        return autoRepository.save(auto);
+    }
+
+    
+//DELETE       
+    public boolean eliminarAuto(String dominio) {
+        if (autoRepository.existsById(dominio)) {
+            autoRepository.deleteById(dominio);
+            return true;
+        }
+        return false;
+    }
+
+//PUT   
+    public boolean existeAuto(String dominio) {
+        return autoRepository.existsById(dominio);
+    }
+
+    public Auto actualizarAuto(Auto auto) {
+        return autoRepository.save(auto);
+    }
+
 }

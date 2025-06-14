@@ -1,0 +1,11 @@
+package AgenciaAutros.AgenciaAutos.controller;
+
+@RestController
+@RequestMapping("/api/usuarios")
+@CrossOrigin(origins = "http://localhost:4200")
+public class UsuarioController {
+    @GetMapping
+    public List<Usuario> listarUsuarios() {
+        return List.of(new Usuario("Juan", "Perez"), new Usuario("Ana", "Gomez"));
+    }
+}

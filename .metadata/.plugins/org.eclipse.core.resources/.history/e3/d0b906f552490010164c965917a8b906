@@ -1,0 +1,5 @@
+package AgenciaAutros.AgenciaAutos.entity;
+
+public class Usuario {
+
+}
