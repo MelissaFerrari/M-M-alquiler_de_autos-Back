@@ -1,7 +1,6 @@
 INDEX VERSION 1.131+C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\.metadata\.plugins\org.eclipse.jdt.core
 3770394603.index
 692769863.index
-788783498.index
 2168516305.index
 562277187.index
 1994916189.index
