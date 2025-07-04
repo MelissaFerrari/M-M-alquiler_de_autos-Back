@@ -1,0 +1,48 @@
+package AgenciaAutros.AgenciaAutos.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import AgenciaAutros.AgenciaAutos.entity.Reserva;
+import AgenciaAutros.AgenciaAutos.service.ReservaService;
+
+@RestController
+@CrossOrigin(origins = "http://localhost:4200")
+public class ReservaController {
+
+    @Autowired
+    private ReservaService reservaService;
+
+    @GetMapping("/getreservas")
+    public List<Reserva> getReservas() {
+        return reservaService.getReservas();
+    }
+    
+    @PostMapping("/reservas")
+    public ResponseEntity<String> crearReserva(@RequestBody Reserva reserva) {
+        Auto autoBD = autoService.getAutoPorDominio(reserva.getAuto().getDominio());
+
+        if (autoBD == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Auto no encontrado.");
+        }
+
+        if (autoBD.isAlquilado()) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("El auto ya está alquilado.");
+        }
+
+        autoBD.setAlquilado(true);
+        autoService.actualizarAuto(autoBD);
+
+        reservaService.saveReserva(reserva);
+
+        return ResponseEntity.ok("Reserva creada correctamente.");
+    }
+
+}
+

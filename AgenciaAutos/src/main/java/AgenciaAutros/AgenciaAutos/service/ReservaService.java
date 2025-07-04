@@ -16,4 +16,8 @@ public class ReservaService {
     public List<Reserva> getReservas() {
         return reservaRepository.obtenerTodasLasReservas();
     }
+    
+    public Reserva agregarReserva(Reserva reserva) {
+        return reservaRepository.save(reserva);
+    }
 }

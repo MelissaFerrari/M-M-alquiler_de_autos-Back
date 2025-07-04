@@ -1,0 +1,61 @@
+package AgenciaAutros.AgenciaAutos.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import AgenciaAutros.AgenciaAutos.entity.Auto;
+import AgenciaAutros.AgenciaAutos.entity.Reserva;
+import AgenciaAutros.AgenciaAutos.service.AutoService;
+import AgenciaAutros.AgenciaAutos.service.ReservaService;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+
+@RestController
+@CrossOrigin(origins = "http://localhost:4200")
+public class ReservaController {
+
+    @Autowired
+    private ReservaService reservaService;
+    
+    @Autowired
+    private AutoService autoService;
+
+    @GetMapping("/getreservas")
+    public List<Reserva> getReservas() {
+        return reservaService.getReservas();
+    }
+    
+    @PostMapping("/agregarreserva")
+    public ResponseEntity<?> agregarReserva(@RequestBody Reserva reserva) {
+        String dominio = reserva.getAuto().getDominio();
+
+        Auto auto = autoService.getAutoPorDominio(dominio);
+        if (auto == null) {
+            return ResponseEntity.badRequest().body("Auto no encontrado con dominio: " + dominio);
+        }
+
+        if (auto.isAlquilado()) {
+            return ResponseEntity.badRequest().body("El auto con dominio " + dominio + " ya está alquilado.");
+        }
+
+        // Marcamos el auto como alquilado
+        auto.setAlquilado(true);
+        autoService.actualizarAuto(auto);
+
+        // Guardamos la reserva
+        Reserva nuevaReserva = reservaService.agregarReserva(reserva);
+        return ResponseEntity.ok(nuevaReserva);
+    }
+    
+
+    
+
+}
+
