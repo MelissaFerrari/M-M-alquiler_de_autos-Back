@@ -1,0 +1,26 @@
+package AgenciaAutros.AgenciaAutos.service;
+
+import AgenciaAutros.AgenciaAutos.entity.Auto;
+import AgenciaAutros.AgenciaAutos.entity.Cliente;
+import AgenciaAutros.AgenciaAutos.repository.ClienteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class ClienteService {
+
+    @Autowired
+    ClienteRepository clienteRepository;
+
+  //GET
+    public List<Cliente> getClientes() {
+        return clienteRepository.obtenerTodosLosClientes();
+    }
+    
+  //POST   
+    public Cliente agregarCliente(Cliente cliente) {
+        return clienteRepository.save(cliente);
+    }
+}

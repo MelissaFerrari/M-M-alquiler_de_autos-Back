@@ -3,6 +3,7 @@ package AgenciaAutros.AgenciaAutos.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,9 @@ import AgenciaAutros.AgenciaAutos.service.AutoService;
 import AgenciaAutros.AgenciaAutos.service.ReservaService;
 
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
@@ -54,7 +57,26 @@ public class ReservaController {
         return ResponseEntity.ok(nuevaReserva);
     }
     
+    /*
+    @DeleteMapping("/eliminarreserva")
+	public ResponseEntity<String> eliminarReserva(@RequestParam Integer id) {
+	    boolean eliminado = reservaService.eliminarReserva(id);
+	    if (eliminado) {
+	        return ResponseEntity.ok("Reserva eliminada correctamente.");
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
 
+	@PutMapping("/actualizarreserva")
+	public ResponseEntity<Reserva> actualizarReserva(@RequestBody Reserva reserva) {
+	    if (reservaService.existeReserva(reserva.getId())) {
+	        return ResponseEntity.ok(reservaService.actualizarReserva(reserva));
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
+*/
     
 
 }

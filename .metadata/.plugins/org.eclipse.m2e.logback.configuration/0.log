@@ -1338,3 +1338,126 @@
 2025-07-04 18:37:44,129 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-07-04 18:37:44,423 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-07-04 18:37:44,464 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 18:59:00,683 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-07-10 19:16:10,872 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:16:11,462 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:16:11,508 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:16:27,219 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:16:27,280 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:16:27,307 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:20:54,989 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:20:55,190 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:20:55,224 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:20:58,526 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:20:58,767 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:20:58,786 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:29:40,344 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:29:40,716 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:29:40,740 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:29:42,706 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:29:43,153 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:29:43,178 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:31:52,837 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:31:52,898 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:31:52,991 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:32:15,274 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:32:15,348 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:32:15,382 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:33:26,633 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:33:26,674 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:33:26,724 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:33:55,096 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:33:55,391 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:33:55,406 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:38:55,296 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:38:55,376 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:38:55,397 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:39:37,848 [Worker-18: Launching Executing clean in C__Users_Melissa_Desktop_PRINCIPAL_Analisis Desarrollo y Programación de Aplicaciones_TERCERO_EDI_ApiConSpring_AgenciaAutos] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos
+2025-07-10 19:39:37,851 [Worker-18: Launching Executing clean in C__Users_Melissa_Desktop_PRINCIPAL_Analisis Desarrollo y Programación de Aplicaciones_TERCERO_EDI_ApiConSpring_AgenciaAutos] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dstyle.color=always clean
+2025-07-10 19:39:55,725 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:39:55,810 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:39:55,837 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:44:27,478 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-07-10 19:49:45,136 [Worker-13: Launching Executing clean in C__Users_Melissa_Desktop_PRINCIPAL_Analisis Desarrollo y Programación de Aplicaciones_TERCERO_EDI_ApiConSpring_AgenciaAutos] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos
+2025-07-10 19:49:45,177 [Worker-13: Launching Executing clean in C__Users_Melissa_Desktop_PRINCIPAL_Analisis Desarrollo y Programación de Aplicaciones_TERCERO_EDI_ApiConSpring_AgenciaAutos] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dstyle.color=always clean
+2025-07-10 19:50:00,607 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:50:00,754 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:50:00,812 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:51:48,058 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-07-10 19:51:53,392 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AgenciaAutros:AgenciaAutos:0.0.1-SNAPSHOT @ C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\pom.xml.
+2025-07-10 19:51:58,106 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AgenciaAutos/src/main/java
+2025-07-10 19:51:58,108 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AgenciaAutos/src/main/resources
+2025-07-10 19:51:58,112 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AgenciaAutos/src/main/resources
+2025-07-10 19:51:58,117 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AgenciaAutos/src/test/java
+2025-07-10 19:51:59,773 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 11 sec
+2025-07-10 19:52:01,462 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:52:01,564 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:52:01,585 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:55:13,075 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:55:13,363 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:55:13,416 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:55:16,168 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:55:16,479 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:55:16,498 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 19:55:57,331 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 19:55:57,419 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 19:55:57,442 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:07:47,471 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:07:48,149 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:07:48,203 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:10:03,220 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:10:03,268 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:10:03,290 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:12:18,697 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:12:18,743 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:12:18,764 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:12:58,457 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:12:59,162 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:12:59,192 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:13:10,080 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:13:10,353 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:13:10,372 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:13:31,305 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:13:31,359 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:13:31,377 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:13:36,832 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:13:36,881 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:13:36,903 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:15:45,701 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:15:45,784 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:15:45,811 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:15:51,135 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:15:51,186 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:15:51,210 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:16:03,372 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:16:03,422 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:16:03,439 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:16:23,874 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:16:24,224 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:16:24,407 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:16:37,167 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:16:37,245 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:16:37,270 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:18:55,054 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:18:55,116 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:18:55,138 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:20:12,167 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:20:12,304 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:20:12,320 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:20:30,236 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:20:30,353 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:20:30,402 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:26:47,939 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:26:48,105 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:26:48,124 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:26:51,420 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:26:51,557 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:26:51,604 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:27:28,024 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:27:28,129 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:27:28,148 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:28:35,870 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:28:35,908 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-10 20:28:35,924 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Melissa\Desktop\PRINCIPAL\Analisis Desarrollo y Programación de Aplicaciones\TERCERO\EDI\ApiConSpring\AgenciaAutos\src\test\resources
+2025-07-10 20:29:12,153 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-10 20:29:12,196 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes

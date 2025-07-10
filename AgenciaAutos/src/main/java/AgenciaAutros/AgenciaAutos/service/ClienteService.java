@@ -13,7 +13,32 @@ public class ClienteService {
     @Autowired
     ClienteRepository clienteRepository;
 
+  //GET
     public List<Cliente> getClientes() {
         return clienteRepository.obtenerTodosLosClientes();
     }
+    
+  //POST   
+    public Cliente agregarCliente(Cliente cliente) {
+        return clienteRepository.save(cliente);
+    }
+    
+  //DELETE       
+    public boolean eliminarCliente(String dni) {
+        if (clienteRepository.existsById(dni)) {
+            clienteRepository.deleteById(dni);
+            return true;
+        }
+        return false;
+    }
+    
+  //PUT   
+    public boolean existeCliente(String dni) {
+        return clienteRepository.existsById(dni);
+    }
+
+    public Cliente actualizarCliente(Cliente cliente) {
+        return clienteRepository.save(cliente);
+    }
+
 }
