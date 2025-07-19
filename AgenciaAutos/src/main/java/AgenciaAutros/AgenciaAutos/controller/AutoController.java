@@ -17,7 +17,7 @@ import org.springframework.http.ResponseEntity;
 
 import AgenciaAutros.AgenciaAutos.service.AutoService;
 import AgenciaAutros.AgenciaAutos.entity.Auto;
-
+import java.util.Map;
 
 
 @RestController
@@ -54,14 +54,15 @@ public class AutoController {
 	}
 
 	@DeleteMapping("/eliminarauto")
-	public ResponseEntity<String> eliminarAuto(@RequestParam String dominio) {
+	public ResponseEntity<?> eliminarAuto(@RequestParam String dominio) {
 	    boolean eliminado = autoService.eliminarAuto(dominio);
 	    if (eliminado) {
-	        return ResponseEntity.ok("Auto eliminado correctamente.");
+	        return ResponseEntity.ok().body(Map.of("mensaje", "Auto eliminado correctamente"));
 	    } else {
-	        return ResponseEntity.notFound().build();
+	        return ResponseEntity.status(404).body(Map.of("mensaje", "No se encontró el auto"));
 	    }
 	}
+
 
 	@PutMapping("/actualizarauto")
 	public ResponseEntity<Auto> actualizarAuto(@RequestBody Auto auto) {
