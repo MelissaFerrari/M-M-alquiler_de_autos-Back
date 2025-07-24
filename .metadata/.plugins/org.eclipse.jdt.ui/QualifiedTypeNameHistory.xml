@@ -10,4 +10,6 @@
     <fullyQualifiedTypeName name="AgenciaAutros.AgenciaAutos.service.AutoService"/>
     <fullyQualifiedTypeName name="AgenciaAutros.AgenciaAutos.entity.Reserva"/>
     <fullyQualifiedTypeName name="AgenciaAutros.AgenciaAutos.entity.Auto"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PatchMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 </qualifiedTypeNameHistroy>

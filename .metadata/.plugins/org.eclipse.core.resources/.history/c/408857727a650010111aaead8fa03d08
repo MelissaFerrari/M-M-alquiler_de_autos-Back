@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import java.util.Map;
-
 
 import AgenciaAutros.AgenciaAutos.service.ClienteService;
 import AgenciaAutros.AgenciaAutos.entity.Cliente;
@@ -54,17 +52,17 @@ public class ClienteController {
 	
 	
 	
-//	@PutMapping("/actualizarcliente")
-//	public ResponseEntity<Cliente> actualizarCliente(@RequestBody Cliente cliente) {
-//	    if (clienteService.existeCliente(cliente.getDni())) {
-//	        return ResponseEntity.ok(clienteService.actualizarCliente(cliente));
-//	    } else {
-//	        return ResponseEntity.notFound().build();
-//	    }
-//	}
+	@PutMapping("/actualizarcliente")
+	public ResponseEntity<Cliente> actualizarCliente(@RequestBody Cliente cliente) {
+	    if (clienteService.existeCliente(cliente.getDni())) {
+	        return ResponseEntity.ok(clienteService.actualizarCliente(cliente));
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
 	
 	
-	// el "actualizar cliente" espera que se ingrese un cliente completo, aqui se elige el atributo a modificar:
+	// se cambio el "actualizar cliente" porque espera que se ingrese un cliente completo, aqui se elige el atributo a modificar
 	@PatchMapping("/clientes/{dni}")
 	public ResponseEntity<?> modificarCampoCliente(
 	        @PathVariable String dni,
@@ -87,11 +85,12 @@ public class ClienteController {
 	            case "telefono":
 	                cliente.setTelefono((String) valor);
 	                break;
+	            // Podés agregar más campos acá si hace falta
 	        }
 	    });
 
 	    clienteService.actualizarCliente(cliente);
-	    return ResponseEntity.ok(Map.of("mensaje", "Cliente modificado correctamente"));
+	    return ResponseEntity.ok("Cliente modificado correctamente.");
 	}
 	
 

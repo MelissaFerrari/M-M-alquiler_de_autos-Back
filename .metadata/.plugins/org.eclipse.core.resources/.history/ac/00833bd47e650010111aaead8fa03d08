@@ -87,11 +87,12 @@ public class ClienteController {
 	            case "telefono":
 	                cliente.setTelefono((String) valor);
 	                break;
+	            // Podés agregar más campos acá si hace falta
 	        }
 	    });
 
 	    clienteService.actualizarCliente(cliente);
-	    return ResponseEntity.ok(Map.of("mensaje", "Cliente modificado correctamente"));
+	    return ResponseEntity.ok("Cliente modificado correctamente.");
 	}
 	
 

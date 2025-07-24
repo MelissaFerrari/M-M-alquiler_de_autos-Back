@@ -37,11 +37,8 @@ public class ClienteService {
         return clienteRepository.existsById(dni);
     }
 
-    public Cliente actualizarCliente(Cliente cliente) {
-        return clienteRepository.save(cliente);
-    }
-
     public Cliente buscarClientePorDni(String dni) {
         return clienteRepository.findById(dni).orElse(null);
     }
+
 }
