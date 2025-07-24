@@ -1,6 +1,7 @@
 package AgenciaAutros.AgenciaAutos.repository;
 
 import AgenciaAutros.AgenciaAutos.entity.Auto;
+import AgenciaAutros.AgenciaAutos.entity.Cliente;
 
 import java.util.List;
 

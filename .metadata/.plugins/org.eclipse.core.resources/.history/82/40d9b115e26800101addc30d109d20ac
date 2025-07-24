@@ -6,8 +6,6 @@ import java.util.List;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -66,43 +64,14 @@ public class AutoController {
 	}
 
 
-//	@PutMapping("/actualizarauto")
-//	public ResponseEntity<Auto> actualizarAuto(@RequestBody Auto auto) {
-//	    if (autoService.existeAuto(auto.getDominio())) {
-//	        return ResponseEntity.ok(autoService.actualizarAuto(auto));
-//	    } else {
-//	        return ResponseEntity.notFound().build();
-//	    }
-	
-	@PatchMapping("/autos/{dominio}")
-	public ResponseEntity<?> modificarCampoAuto(
-	        @PathVariable String dominio,
-	        @RequestBody Map<String, Object> cambios) {
-
-	    Auto auto = autoService.buscarAutoPorDominio(dominio);
-
-	    if (auto == null) {
+	@PutMapping("/actualizarauto")
+	public ResponseEntity<Auto> actualizarAuto(@RequestBody Auto auto) {
+	    if (autoService.existeAuto(auto.getDominio())) {
+	        return ResponseEntity.ok(autoService.actualizarAuto(auto));
+	    } else {
 	        return ResponseEntity.notFound().build();
 	    }
-
-	    cambios.forEach((campo, valor) -> {
-	        switch (campo) {
-	            case "marca":
-	                auto.setMarca((String) valor);
-	                break;
-	            case "modelo":
-	                auto.setModelo((String) valor);
-	                break;
-	            case "kilometros":
-	                auto.setKilometros((String) valor);
-	                break;
-	        }
-	    });
-
-	    autoService.actualizarAuto(auto);
-	    return ResponseEntity.ok(Map.of("mensaje", "Auto modificado correctamente"));
 	}
-
 
 	
 }

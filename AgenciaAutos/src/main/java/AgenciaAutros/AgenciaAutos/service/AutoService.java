@@ -47,4 +47,9 @@ public class AutoService {
         return autoRepository.save(auto);
     }
 
+    public Auto buscarAutoPorDominio(String dominio) {
+        return autoRepository.findById(dominio).orElse(null);
+    }
+
+
 }

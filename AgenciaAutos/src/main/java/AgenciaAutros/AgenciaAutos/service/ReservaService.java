@@ -1,6 +1,5 @@
 package AgenciaAutros.AgenciaAutos.service;
 
-import AgenciaAutros.AgenciaAutos.entity.Auto;
 import AgenciaAutros.AgenciaAutos.entity.Reserva;
 import AgenciaAutros.AgenciaAutos.repository.ReservaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
