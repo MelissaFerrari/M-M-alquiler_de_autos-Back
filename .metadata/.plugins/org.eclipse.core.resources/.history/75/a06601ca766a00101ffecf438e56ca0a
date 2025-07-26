@@ -95,7 +95,7 @@ public class ReservaController {
 */
     
 	@DeleteMapping("/eliminarreserva")
-	public ResponseEntity<String> eliminarReserva(@RequestParam String id) {
+	public ResponseEntity<String> eliminarReserva(@RequestParam String dni) {
 	    boolean eliminado = reservaService.eliminarReserva(id);
 	    if (eliminado) {
 	        return ResponseEntity.ok("Reserva eliminado correctamente.");

@@ -82,7 +82,15 @@ public class ReservaController {
     }*/
     
     /*
-
+    @DeleteMapping("/eliminarreserva")
+	public ResponseEntity<String> eliminarReserva(@RequestParam Integer id) {
+	    boolean eliminado = reservaService.eliminarReserva(id);
+	    if (eliminado) {
+	        return ResponseEntity.ok("Reserva eliminada correctamente.");
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
 
 	@PutMapping("/actualizarreserva")
 	public ResponseEntity<Reserva> actualizarReserva(@RequestBody Reserva reserva) {
@@ -94,15 +102,6 @@ public class ReservaController {
 	}
 */
     
-	@DeleteMapping("/eliminarreserva")
-	public ResponseEntity<String> eliminarReserva(@RequestParam String id) {
-	    boolean eliminado = reservaService.eliminarReserva(id);
-	    if (eliminado) {
-	        return ResponseEntity.ok("Reserva eliminado correctamente.");
-	    } else {
-	        return ResponseEntity.notFound().build();
-	    }
-	}
-    
+
 }
 

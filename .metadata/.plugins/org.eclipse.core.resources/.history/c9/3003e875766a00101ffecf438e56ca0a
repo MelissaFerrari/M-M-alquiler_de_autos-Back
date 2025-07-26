@@ -94,15 +94,15 @@ public class ReservaController {
 	}
 */
     
-	@DeleteMapping("/eliminarreserva")
-	public ResponseEntity<String> eliminarReserva(@RequestParam String id) {
-	    boolean eliminado = reservaService.eliminarReserva(id);
-	    if (eliminado) {
-	        return ResponseEntity.ok("Reserva eliminado correctamente.");
-	    } else {
-	        return ResponseEntity.notFound().build();
-	    }
-	}
+    @DeleteMapping("/reservas/{id}")
+    public ResponseEntity<String> eliminarReserva(@PathVariable Integer id) {
+    boolean eliminado = reservaService.eliminarReserva(id);
+    if (eliminado) {
+        return ResponseEntity.ok("Reserva eliminada correctamente.");
+    } else {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Reserva no encontrada.");
+    }
+}
     
 }
 

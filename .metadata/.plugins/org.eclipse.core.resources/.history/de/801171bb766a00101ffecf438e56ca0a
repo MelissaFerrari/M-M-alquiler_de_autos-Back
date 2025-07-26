@@ -24,13 +24,15 @@ public class ReservaService {
     }
     
  //DELETE       
-    public boolean eliminarReserva(String id) {
-        if (reservaRepository.existsById(id)) {
+    public boolean eliminarReserva(Integer id) {
+        Optional<Reserva> reservaOpt = reservaRepository.findById(id);
+        if (reservaOpt.isPresent()) {
             reservaRepository.deleteById(id);
             return true;
         }
         return false;
     }
+
 
 //PUT   
      /* public boolean existeReserva(Integer id) {  //originalmente era String pero aca el id es int
