@@ -37,6 +37,30 @@ public class ReservaController {
     
     @PostMapping("/agregarreserva")
     public ResponseEntity<?> agregarReserva(@RequestBody Reserva reserva) {
+        try {
+            // Obtener dominio del auto
+            String dominio = reserva.getAuto().getDominio();
+
+            // Buscar auto por dominio
+            Auto auto = autoService.getAutoPorDominio(dominio);
+
+            // Marcar como alquilado
+            auto.setAlquilado(true);
+            autoService.actualizarAuto(auto);
+
+            // Guardar reserva
+            Reserva nuevaReserva = reservaService.agregarReserva(reserva);
+
+            return ResponseEntity.ok(nuevaReserva);
+
+        } catch (Exception e) {
+            e.printStackTrace(); // Para que puedas ver detalles en la consola del backend
+            return ResponseEntity.status(500).body("Error al agregar la reserva.");
+        }
+    }
+
+    /*@PostMapping("/agregarreserva")
+    public ResponseEntity<?> agregarReserva(@RequestBody Reserva reserva) {
         String dominio = reserva.getAuto().getDominio();
 
         Auto auto = autoService.getAutoPorDominio(dominio);
@@ -55,7 +79,7 @@ public class ReservaController {
         // Guardamos la reserva
         Reserva nuevaReserva = reservaService.agregarReserva(reserva);
         return ResponseEntity.ok(nuevaReserva);
-    }
+    }*/
     
     /*
     @DeleteMapping("/eliminarreserva")
