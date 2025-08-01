@@ -5,7 +5,6 @@ import AgenciaAutros.AgenciaAutos.repository.ReservaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -21,12 +20,12 @@ public class ReservaService {
     
 //POST
     public Reserva agregarReserva(Reserva reserva) {
-    	  if (reserva.getFechaInicio().isBefore(LocalDate.now())) {
-              throw new IllegalArgumentException("No se puede reservar para una fecha anterior a hoy.");
-          }
+    	if (reserva.getFecha().isBefore(LocalDate.now())) {
+    	    throw new IllegalArgumentException("No se puede reservar para una fecha pasada.");
+    	}else {
     	
         return reservaRepository.save(reserva);
-    }
+    }}
     
  //DELETE       
     public boolean eliminarReserva(String id) {

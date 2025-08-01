@@ -3,11 +3,12 @@ package AgenciaAutros.AgenciaAutos.entity;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 
+
 @Entity
 @Table(name = "reservas")
 public class Reserva {
 
-    @Id
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
@@ -37,6 +38,7 @@ public class Reserva {
     }
 
     // Getters y Setters
+
     public int getId() {
         return id;
     }

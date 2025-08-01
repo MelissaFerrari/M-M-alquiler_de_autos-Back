@@ -21,9 +21,9 @@ public class ReservaService {
     
 //POST
     public Reserva agregarReserva(Reserva reserva) {
-    	  if (reserva.getFechaInicio().isBefore(LocalDate.now())) {
-              throw new IllegalArgumentException("No se puede reservar para una fecha anterior a hoy.");
-          }
+    	if (reserva.getFecha().isBefore(LocalDate.now())) {
+    	    throw new IllegalArgumentException("No se puede reservar para una fecha pasada.");
+    	}
     	
         return reservaRepository.save(reserva);
     }
