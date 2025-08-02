@@ -15,7 +15,7 @@ import AgenciaAutros.AgenciaAutos.service.AutoService;
 import AgenciaAutros.AgenciaAutos.service.ReservaService;
 
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
+//import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -90,6 +90,13 @@ public class ReservaController {
 	    }
 	}
 */
+    
+    @GetMapping("/dominio-reservado")
+    public ResponseEntity<Boolean> estaDominioEnReserva(@RequestParam String dominio) {
+        boolean reservado = reservaService.estaDominioEnReserva(dominio);
+        return ResponseEntity.ok(reservado);
+    }
+
     
 	@DeleteMapping("/eliminarreserva")
 	public ResponseEntity<String> eliminarReserva(@RequestParam String id) {

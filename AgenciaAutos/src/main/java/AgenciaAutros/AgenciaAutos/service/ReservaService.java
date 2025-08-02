@@ -19,6 +19,12 @@ public class ReservaService {
         return reservaRepository.obtenerTodasLasReservas();
     }
     
+    public boolean estaDominioEnReserva(String dominio) {
+        return reservaRepository.obtenerTodasLasReservas()
+                .stream()
+                .anyMatch(reserva -> reserva.getAuto().getDominio().equalsIgnoreCase(dominio));
+    }
+
 //POST
     public Reserva agregarReserva(Reserva reserva) {
     	  if (reserva.getFechaInicio().isBefore(LocalDate.now())) {
