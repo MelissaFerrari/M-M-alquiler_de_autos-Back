@@ -20,6 +20,10 @@ import org.springframework.http.ResponseEntity;
 import AgenciaAutros.AgenciaAutos.service.AutoService;
 import AgenciaAutros.AgenciaAutos.entity.Auto;
 import java.util.Map;
+import org.springframework.web.multipart.MultipartFile;
+import java.io.File;
+import java.io.IOException;
+
 
 
 @RestController
@@ -54,6 +58,26 @@ public class AutoController {
 	public Auto agregarAuto(@RequestBody Auto auto) {
 	    return autoService.agregarAuto(auto);
 	}
+	@PostMapping("/upload")
+	public ResponseEntity<String> subirFoto(@RequestParam("file") MultipartFile file) {
+	    String carpetaAbsoluta = System.getProperty("user.dir") + File.separator + "uploads" + File.separator;
+
+	    File directorio = new File(carpetaAbsoluta);
+	    if (!directorio.exists()) {
+	        directorio.mkdirs();
+	    }
+
+	    String rutaArchivo = carpetaAbsoluta + file.getOriginalFilename();
+
+	    try {
+	        file.transferTo(new File(rutaArchivo));
+	        return ResponseEntity.ok(file.getOriginalFilename());
+	    } catch (IOException e) {
+	        e.printStackTrace();  // Dejá esto para ver más errores si ocurren
+	        return ResponseEntity.status(500).body("Error al subir la imagen.");
+	    }
+	}
+
 
 	@DeleteMapping("/eliminarauto")
 	public ResponseEntity<?> eliminarAuto(@RequestParam String dominio) {

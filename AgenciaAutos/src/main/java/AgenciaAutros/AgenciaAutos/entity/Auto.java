@@ -24,6 +24,17 @@ public class Auto {
 
     @Column(nullable = false)
     private boolean alquilado = false;
+    @Column(length = 255)
+    private String foto;
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
 
     // Constructores
     public Auto() {
