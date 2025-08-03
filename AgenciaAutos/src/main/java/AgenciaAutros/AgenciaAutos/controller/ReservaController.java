@@ -107,6 +107,12 @@ public class ReservaController {
 	        return ResponseEntity.notFound().build();
 	    }
 	}
+	@GetMapping("/cliente-reservado")
+	public ResponseEntity<Boolean> estaClienteEnReserva(@RequestParam String dni) {
+	    boolean reservado = reservaService.estaDniEnReserva(dni);
+	    return ResponseEntity.ok(reservado);
+	}
+
     
 }
 

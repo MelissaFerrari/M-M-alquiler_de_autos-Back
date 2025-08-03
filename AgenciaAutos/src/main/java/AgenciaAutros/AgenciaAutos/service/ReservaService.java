@@ -24,6 +24,12 @@ public class ReservaService {
                 .stream()
                 .anyMatch(reserva -> reserva.getAuto().getDominio().equalsIgnoreCase(dominio));
     }
+    public boolean estaDniEnReserva(String dniCliente) {
+        return reservaRepository.obtenerTodasLasReservas()
+                .stream()
+                .anyMatch(reserva -> reserva.getCliente().getDni().equalsIgnoreCase(dniCliente));
+    }
+
 
 //POST
     public Reserva agregarReserva(Reserva reserva) {
