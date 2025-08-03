@@ -1,8 +1,6 @@
 package AgenciaAutros.AgenciaAutos.controller;
 
-import java.time.LocalDate;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -11,16 +9,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import AgenciaAutros.AgenciaAutos.entity.Auto;
 import AgenciaAutros.AgenciaAutos.entity.Reserva;
-import AgenciaAutros.AgenciaAutos.entity.Cliente;
 import AgenciaAutros.AgenciaAutos.service.AutoService;
 import AgenciaAutros.AgenciaAutos.service.ReservaService;
 
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 //import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -61,6 +56,41 @@ public class ReservaController {
         }
     }
 
+
+    /*@PostMapping("/agregarreserva")
+    public ResponseEntity<?> agregarReserva(@RequestBody Reserva reserva) {
+        String dominio = reserva.getAuto().getDominio();
+
+        Auto auto = autoService.getAutoPorDominio(dominio);
+        if (auto == null) {
+            return ResponseEntity.badRequest().body("Auto no encontrado con dominio: " + dominio);
+        }
+
+        if (auto.isAlquilado()) {
+            return ResponseEntity.ok().body("El auto con dominio " + dominio + " ya está alquilado.");
+        }
+
+        // Marcamos el auto como alquilado
+        auto.setAlquilado(true);
+        autoService.actualizarAuto(auto);
+
+        // Guardamos la reserva
+        Reserva nuevaReserva = reservaService.agregarReserva(reserva);
+        return ResponseEntity.ok(nuevaReserva);
+    }*/
+    
+    /*
+
+
+	@PutMapping("/actualizarreserva")
+	public ResponseEntity<Reserva> actualizarReserva(@RequestBody Reserva reserva) {
+	    if (reservaService.existeReserva(reserva.getId())) {
+	        return ResponseEntity.ok(reservaService.actualizarReserva(reserva));
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
+*/
     
     @GetMapping("/dominio-reservado")
     public ResponseEntity<Boolean> estaDominioEnReserva(@RequestParam String dominio) {
@@ -70,7 +100,7 @@ public class ReservaController {
 
     
 	@DeleteMapping("/eliminarreserva")
-	public ResponseEntity<String> eliminarReserva(@RequestParam Integer id) {
+	public ResponseEntity<String> eliminarReserva(@RequestParam String id) {
 	    boolean eliminado = reservaService.eliminarReserva(id);
 	    if (eliminado) {
 	        return ResponseEntity.ok("Reserva eliminado correctamente.");
@@ -86,9 +116,11 @@ public class ReservaController {
 
     
 	@PatchMapping("/reservas/{id}")
-	public ResponseEntity<?> actualizarReserva(@PathVariable Integer id, @RequestBody Map<String, Object> cambios) {
-	    Reserva reserva = reservaService.buscarReservaPorId(id);
+	public ResponseEntity<?> modificarCampoReserva(
+	        @PathVariable Integer id,
+	        @RequestBody Map<String, Object> cambios) {
 
+	    Reserva reserva = reservaService.buscarReservaPorId(id);
 	    if (reserva == null) {
 	        return ResponseEntity.notFound().build();
 	    }
@@ -96,14 +128,10 @@ public class ReservaController {
 	    cambios.forEach((campo, valor) -> {
 	        switch (campo) {
 	            case "dni_cliente":
-	                Cliente cliente = new Cliente();
-	                cliente.setDni((String) valor);
-	                reserva.setCliente(cliente);
+	                reserva.setDniCliente((String) valor);
 	                break;
 	            case "dominio_auto":
-	                Auto auto = new Auto();
-	                auto.setDominio((String) valor);
-	                reserva.setAuto(auto);
+	                reserva.setDominioAuto((String) valor);
 	                break;
 	            case "fecha_inicio":
 	                reserva.setFechaInicio(LocalDate.parse((String) valor));
@@ -114,8 +142,8 @@ public class ReservaController {
 	        }
 	    });
 
-	    Reserva actualizada = reservaService.actualizarReserva(reserva);
-	    return ResponseEntity.ok(actualizada);
+	    reservaService.actualizarReserva(reserva);
+	    return ResponseEntity.ok(Map.of("mensaje", "Reserva modificada correctamente"));
 	}
 	
 }

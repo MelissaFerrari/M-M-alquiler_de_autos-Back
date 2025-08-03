@@ -41,7 +41,7 @@ public class ReservaService {
     }
     
  //DELETE       
-    public boolean eliminarReserva(Integer id) {
+    public boolean eliminarReserva(String id) {
         if (reservaRepository.existsById(id)) {
             reservaRepository.deleteById(id);
             return true;

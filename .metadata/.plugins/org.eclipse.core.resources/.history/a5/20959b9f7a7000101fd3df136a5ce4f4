@@ -61,6 +61,41 @@ public class ReservaController {
         }
     }
 
+
+    /*@PostMapping("/agregarreserva")
+    public ResponseEntity<?> agregarReserva(@RequestBody Reserva reserva) {
+        String dominio = reserva.getAuto().getDominio();
+
+        Auto auto = autoService.getAutoPorDominio(dominio);
+        if (auto == null) {
+            return ResponseEntity.badRequest().body("Auto no encontrado con dominio: " + dominio);
+        }
+
+        if (auto.isAlquilado()) {
+            return ResponseEntity.ok().body("El auto con dominio " + dominio + " ya está alquilado.");
+        }
+
+        // Marcamos el auto como alquilado
+        auto.setAlquilado(true);
+        autoService.actualizarAuto(auto);
+
+        // Guardamos la reserva
+        Reserva nuevaReserva = reservaService.agregarReserva(reserva);
+        return ResponseEntity.ok(nuevaReserva);
+    }*/
+    
+    /*
+
+
+	@PutMapping("/actualizarreserva")
+	public ResponseEntity<Reserva> actualizarReserva(@RequestBody Reserva reserva) {
+	    if (reservaService.existeReserva(reserva.getId())) {
+	        return ResponseEntity.ok(reservaService.actualizarReserva(reserva));
+	    } else {
+	        return ResponseEntity.notFound().build();
+	    }
+	}
+*/
     
     @GetMapping("/dominio-reservado")
     public ResponseEntity<Boolean> estaDominioEnReserva(@RequestParam String dominio) {
@@ -70,7 +105,7 @@ public class ReservaController {
 
     
 	@DeleteMapping("/eliminarreserva")
-	public ResponseEntity<String> eliminarReserva(@RequestParam Integer id) {
+	public ResponseEntity<String> eliminarReserva(@RequestParam String id) {
 	    boolean eliminado = reservaService.eliminarReserva(id);
 	    if (eliminado) {
 	        return ResponseEntity.ok("Reserva eliminado correctamente.");
@@ -85,8 +120,8 @@ public class ReservaController {
 	}
 
     
-	@PatchMapping("/reservas/{id}")
-	public ResponseEntity<?> actualizarReserva(@PathVariable Integer id, @RequestBody Map<String, Object> cambios) {
+	@PutMapping("/actualizarreserva")
+	public ResponseEntity<?> actualizarReserva(@RequestParam Integer id, @RequestBody Map<String, Object> cambios) {
 	    Reserva reserva = reservaService.buscarReservaPorId(id);
 
 	    if (reserva == null) {

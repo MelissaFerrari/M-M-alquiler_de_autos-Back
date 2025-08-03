@@ -5,6 +5,7 @@ import AgenciaAutros.AgenciaAutos.repository.ReservaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -18,13 +19,29 @@ public class ReservaService {
         return reservaRepository.obtenerTodasLasReservas();
     }
     
+    public boolean estaDominioEnReserva(String dominio) {
+        return reservaRepository.obtenerTodasLasReservas()
+                .stream()
+                .anyMatch(reserva -> reserva.getAuto().getDominio().equalsIgnoreCase(dominio));
+    }
+    public boolean estaDniEnReserva(String dniCliente) {
+        return reservaRepository.obtenerTodasLasReservas()
+                .stream()
+                .anyMatch(reserva -> reserva.getCliente().getDni().equalsIgnoreCase(dniCliente));
+    }
+
+
 //POST
     public Reserva agregarReserva(Reserva reserva) {
+    	  if (reserva.getFechaInicio().isBefore(LocalDate.now())) {
+              throw new IllegalArgumentException("No se puede reservar para una fecha anterior a hoy.");
+          }
+    	
         return reservaRepository.save(reserva);
     }
     
  //DELETE       
-    /*  public boolean eliminarReserva(Integer id) { //originalmente era String pero aca el id es int
+    public boolean eliminarReserva(String id) {
         if (reservaRepository.existsById(id)) {
             reservaRepository.deleteById(id);
             return true;
@@ -33,7 +50,7 @@ public class ReservaService {
     }
 
 //PUT   
-  public boolean existeReserva(Integer id) {  //originalmente era String pero aca el id es int
+     /* public boolean existeReserva(Integer id) {  //originalmente era String pero aca el id es int
         return reservaRepository.existsById(id);
     }
 

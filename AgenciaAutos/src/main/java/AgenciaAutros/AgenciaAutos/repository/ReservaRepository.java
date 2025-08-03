@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ReservaRepository extends JpaRepository<Reserva, String> {
+public interface ReservaRepository extends JpaRepository<Reserva, Integer> {
 
 	
     @Query("SELECT c FROM Reserva c")
