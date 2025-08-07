@@ -1,23 +1,18 @@
 package AgenciaAutros.AgenciaAutos.controller;
 
 import java.util.List;
-
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import java.util.Map;
-
-
 import AgenciaAutros.AgenciaAutos.service.ClienteService;
 import AgenciaAutros.AgenciaAutos.entity.Cliente;
 
@@ -51,20 +46,9 @@ public class ClienteController {
 	        return ResponseEntity.notFound().build();
 	    }
 	}
-	
-	
-	
-//	@PutMapping("/actualizarcliente")
-//	public ResponseEntity<Cliente> actualizarCliente(@RequestBody Cliente cliente) {
-//	    if (clienteService.existeCliente(cliente.getDni())) {
-//	        return ResponseEntity.ok(clienteService.actualizarCliente(cliente));
-//	    } else {
-//	        return ResponseEntity.notFound().build();
-//	    }
-//	}
-	
-	
-	// el "actualizar cliente" espera que se ingrese un cliente completo, aqui se elige el atributo a modificar:
+
+
+	// el "actualizar cliente" espera que se ingrese un cliente completo, aca se elige el atributo a modificar:
 	@PatchMapping("/clientes/{dni}")
 	public ResponseEntity<?> modificarCampoCliente(
 	        @PathVariable String dni,
@@ -93,7 +77,5 @@ public class ClienteController {
 	    clienteService.actualizarCliente(cliente);
 	    return ResponseEntity.ok(Map.of("mensaje", "Cliente modificado correctamente"));
 	}
-	
-
 }
 

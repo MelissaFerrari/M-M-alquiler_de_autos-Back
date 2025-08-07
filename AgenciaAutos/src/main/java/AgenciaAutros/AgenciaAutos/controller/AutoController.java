@@ -1,22 +1,17 @@
 package AgenciaAutros.AgenciaAutos.controller;
 
-
 import java.util.List;
-
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-
 import AgenciaAutros.AgenciaAutos.service.AutoService;
 import AgenciaAutros.AgenciaAutos.entity.Auto;
 import java.util.Map;
@@ -24,12 +19,10 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 
-
-
-@RestController
-@CrossOrigin(origins = "http://localhost:4200")
-public class AutoController {
-	
+	@RestController
+	@CrossOrigin(origins = "http://localhost:4200")
+	public class AutoController {
+		
 	@Autowired
 	private AutoService autoService;
 	
@@ -73,7 +66,7 @@ public class AutoController {
 	        file.transferTo(new File(rutaArchivo));
 	        return ResponseEntity.ok(file.getOriginalFilename());
 	    } catch (IOException e) {
-	        e.printStackTrace();  // Dejá esto para ver más errores si ocurren
+	        e.printStackTrace();
 	        return ResponseEntity.status(500).body("Error al subir la imagen.");
 	    }
 	}
@@ -90,14 +83,6 @@ public class AutoController {
 	}
 
 
-//	@PutMapping("/actualizarauto")
-//	public ResponseEntity<Auto> actualizarAuto(@RequestBody Auto auto) {
-//	    if (autoService.existeAuto(auto.getDominio())) {
-//	        return ResponseEntity.ok(autoService.actualizarAuto(auto));
-//	    } else {
-//	        return ResponseEntity.notFound().build();
-//	    }
-	
 	@PatchMapping("/autos/{dominio}")
 	public ResponseEntity<?> modificarCampoAuto(
 	        @PathVariable String dominio,
@@ -126,7 +111,4 @@ public class AutoController {
 	    autoService.actualizarAuto(auto);
 	    return ResponseEntity.ok(Map.of("mensaje", "Auto modificado correctamente"));
 	}
-
-
-	
 }
